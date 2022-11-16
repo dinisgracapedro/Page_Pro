@@ -1,0 +1,110 @@
+/*SETTING ALL VARIABLES*/
+:root{
+    --bg-body:#131416;
+    --color-font:#fff;
+    --color-button:#0772eb;
+    --color-card:#1e212c;
+}
+
+/*SETTING VALUES FOR BODY*/
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0; 
+    background-color: var(--bg-body); 
+}
+
+/*SETTING CONTAINER*/
+.container{
+    max-width: 830px; /*Setting max width for container for template*/
+    margin: auto; /*Center itens inside container*/
+}
+/*SETTING FOR HEADER*/
+header .logo{
+    display: flex; /*Para deixar objecto proximo do outro*/
+    justify-content: center;   /*Center header logo div*/
+    align-items: center; /*Align image on vertical for text*/
+    margin-top: 10px;
+}
+
+.logo h2{
+    color: var(--color-font);
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+}
+
+/*SETTING FOR SECTION 1*/
+.section_1{
+    display: flex; /*Para deixar objecto proximo do outro*/
+    margin-top: 100px; /*Dar um espaçamento no top*/
+}
+
+.ebook img{
+    width: 230px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.action_title h2{
+    font-size: 40px;
+    color: var(--color-font);
+}
+
+.button{
+    background-color: var(--color-button);
+    color: var(--color-font);
+    padding: 15px 70px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+/*SETTING FOR SECTION 1*/
+.section_2{
+    display: flex; /*Para deixar objecto proximo do outro*/
+    margin-top: 100px; /*Dar um espaçamento no top*/
+    
+    justify-content: center; /*Organizar no meio da tela*/
+    flex-direction: column; /*Para h2 em cima e card ficam em baixo */
+    align-items: center; /*Alinhar todos os elementos que estão no Classe Section*/
+}
+
+.section_2 h2{
+    color: var(--color-font);
+    text-transform: uppercase;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    
+}
+
+.card{
+    display: flex; /*Ficar um abaixo do outro*/
+    justify-content: center;
+    align-items: center; /*Para os textos ficar no meio do Card*/
+    flex-direction: column; /*Para os itens ficam em coluna, um fica acima do outro*/
+    
+    border-radius: 10px;
+    color: var(--color-font);
+    background-color: var(--color-card);
+    height: 180px;
+    width: 220px;
+}
+
+
+.card img{
+    height: 45px;
+    width: 45px;
+}
+
